@@ -1,5 +1,6 @@
 .contacts {
-  padding: 60px 16px 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background: #fff5f6;
 }
@@ -74,7 +75,7 @@
   font-family: var(--primary-font-family);
   @include font(12px, 18px, 500);
 
-  color: #907e82;
+  color: var(--text-color-secondary);
 
   margin-bottom: 24px;
   padding-bottom: 24px;
@@ -109,7 +110,9 @@
   font-family: var(--primary-font-family);
   @include font(12px, 18px, 500);
 
-  color: #907e82;
+  color: var(--text-color-secondary);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list__item-link:hover,
@@ -148,6 +151,12 @@
   height: 44px;
 }
 
+.products-list-btn__location-icon {
+  width: 8px;
+  height: 12px;
+  margin-left: 8px;
+}
+
 .products-list-btn__item-franchise {
   background: #ffffff;
   border-radius: 22px;
@@ -166,12 +175,22 @@
 
   width: 161px;
   height: 44px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products-list-btn__franchise-icon {
+  width: 8px;
+  height: 12px;
+  margin-left: 8px;
 }
 
 .products-list-btn__item-franchise:hover,
 .products-list-btn__item-franchise:focus {
-  background: #ecebeb;
+  background-color: #ecebeb;
 }
+
+
 
 @media screen and(min-width:768px) {
   .contacts {
@@ -255,7 +274,6 @@
 
   .products-list-btn__item-locations {
     padding-left: 30px;
-    padding-right: 30px;
   
     width: 191px;
     height: 44px;
@@ -263,9 +281,57 @@
 
   .products-list-btn__item-franchise {
     padding-left: 37px;
-    padding-right: 32px;
   
     width: 174px;
     height: 44px;
   }
+}
+
+@media screen and(min-width:1280px){
+  .contacts {
+    padding-top: 120px;
+    padding-bottom: 121px;
+    }
+
+    .contacts-list__item-cafe {
+      width: 75px;
+    }
+
+    .contacts-list__item-description-1 {
+      @include font(16px, 30px, 500);
+  
+      margin-bottom: 8px;
+    }
+
+    .contacts-list__item-description-2 {
+      @include font(16px, 29px, 500);
+    }
+
+    .contacts-list__item-schedule-day {
+      @include font(16px, 30px, 500);
+    }
+
+    .contacts-list__item-schedule-time {
+      @include font(16px, 30px, 500);
+      }
+
+      .contact-list__item-link {
+        @include font(16px, 29px, 500);
+      }
+
+      .products-list-btn__item:not(:last-child){
+        margin-right: 12px;
+      }
+
+      .products-list-btn__item-locations {
+        padding-left: 35px;
+      
+        width: 198px;
+      }
+
+      .products-list-btn__item-franchise {
+        padding-left: 36px;
+      
+        width: 168px;
+      }     
 }
