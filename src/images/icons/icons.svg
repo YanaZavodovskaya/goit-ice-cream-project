@@ -8,4 +8,11 @@
 <symbol id="icon-telegram" viewBox="0 0 33 32"><path fill="#fea5bb" style="fill:var(--color6, #fea5bb)" d="M32.235 16c0 8.837-7.163 16-16 16s-16-7.163-16-16 7.163-16 16-16 16 7.163 16 16z"/><path fill="#fff" style="fill:var(--color1, #fff)" d="m13.102 18.375-.317 4.17c.454 0 .651-.183.887-.401l2.13-1.9 4.415 3.017c.81.42 1.38.199 1.599-.695l2.897-12.673h.001c.257-1.118-.433-1.554-1.222-1.28L6.46 14.699c-1.162.42-1.145 1.026-.198 1.3l4.355 1.264 10.114-5.907c.476-.294.91-.131.553.163l-8.181 6.856z"/></symbol>
 <symbol id="icon-facebook" viewBox="0 0 33 32"><path fill="#fea5bb" style="fill:var(--color6, #fea5bb)" d="M16.47 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.836 0-16 7.163-16 16s7.164 16 16 16z"/><path fill="#fff" style="fill:var(--color1, #fff)" d="M20.916 15.981h-2.61V25.6h-3.955v-9.62h-1.88V12.6h1.88v-2.187c0-1.565.74-4.014 3.99-4.014l2.93.012v3.281h-2.126c-.348 0-.839.176-.839.922v1.99h2.956l-.346 3.376z"/></symbol>
 <symbol id="icon-close" viewBox="0 0 32 32"><path fill="none" stroke-width="2" d="m2.52 2 26.96 28M2 29.48 30 2.52"/></symbol>
-<symbol id="icon-arrow-right-mini" viewBox="0 0 26 32"><path stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" d="M3.542 3.2 20.368 16 3.542 28.8"/></symbol></defs></svg>
+<symbol id="icon-arrow-right-mini" viewBox="0 0 26 32"><path stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" d="M3.542 3.2 20.368 16 3.542 28.8"/></symbol>
+<symbol id="icon-contacts-arrow" viewBox="0 0 26 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.173 3.2l14.169 12.8-14.169 12.8"></path>
+</symbol>
+<symbol id="icon-contacts-arrow-red" viewBox="0 0 22 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color2, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.545 3.2l13.7 12.8-13.7 12.8"></path>
+</symbol>
+</defs></svg>
