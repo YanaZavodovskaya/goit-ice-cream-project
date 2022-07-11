@@ -1,0 +1,335 @@
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: #fff5f6;
+}
+
+.contacts-list {
+  margin-bottom: 32px;
+}
+
+.contacts-list__item {
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  padding: 40px 32px;
+
+  max-width: 440px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts-list__item-category {
+  font-family: var(--primary-font-family);
+  @include font(12px, 22px, 500);
+
+  color: var(--text-color-theme-dark);
+}
+
+.contacts-list__item-cafe {
+  background: #f0d1a5;
+  border-radius: 4px;
+
+  width: 80px;
+  height: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.contacts-list__item-foodtruck {
+  background: #c2e297;
+  border-radius: 4px;
+
+  width: 130px;
+  height: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.contacts-list__item-description-1 {
+  font-family: var(--primary-font-family);
+  @include font(12px, 22px, 500);
+
+  color: var(--text-color-secondary);
+
+  margin-bottom: 8px;
+}
+
+.contacts-list__item-description-2 {
+  font-family: var(--primary-font-family);
+  @include font(12px, 18px, 500);
+
+  color: var(--text-color-secondary);
+
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts-list__item-schedule-list {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts-list__item-schedule-day {
+  font-family: var(--primary-font-family);
+  @include font(12px, 22px, 500);
+
+  color: var(--text-color-secondary);
+}
+
+.contacts-list__item-schedule-time {
+  font-family: var(--primary-font-family);
+  @include font(12px, 22px, 500);
+
+  color: var(--secondary-accent-color);
+
+  margin-bottom: 8px;
+}
+
+.contact-list__item-link {
+  font-family: var(--primary-font-family);
+  @include font(12px, 18px, 500);
+
+  color: var(--text-color-secondary);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
+}
+
+.products-list-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.products-list-btn__item {
+  margin-bottom: 10px;
+}
+
+.products-list-btn__item-locations {
+  background: #d41342;
+  border-radius: 22px;
+
+  font-family: var(--primary-font-family);
+  @include font(16px, 21px, 700);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  padding-left: 17px;
+  padding-right: 17px;
+
+  width: 162px;
+  height: 44px;
+}
+
+.products-list-btn__location-icon {
+  width: 8px;
+  height: 12px;
+  margin-left: 8px;
+}
+
+.products-list-btn__item-franchise {
+  background: #ffffff;
+  border-radius: 22px;
+
+  font-family: var(--primary-font-family);
+  @include font(16px, 21px, 700);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #d41443;
+
+  padding-left: 32px;
+  padding-right: 32px;
+
+  width: 161px;
+  height: 44px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.products-list-btn__franchise-icon {
+  width: 8px;
+  height: 12px;
+  margin-left: 8px;
+}
+
+@media screen and(min-width:768px) {
+  .contacts {
+    padding-top: 80px;
+  }
+
+  .contacts-list {
+    margin-bottom: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacts-list__item:not(:last-child) {
+    margin-bottom: 0px;
+    margin-right: 32px;
+  }
+
+  .contacts-list__item-category {
+    @include font(16px, 30px, 500);
+  }
+
+  .contacts-list__item-cafe {
+    width: 73px;
+    height: 28px;
+
+    margin-bottom: 32px;
+  }
+
+  .contacts-list__item-foodtruck {
+    width: 138px;
+    height: 28px;
+
+    margin-bottom: 32px;
+  }
+
+  .contacts-list__item-description-1 {
+    @include font(14px, 26px, 500);
+
+    margin-bottom: 12px;
+  }
+
+  .contacts-list__item-description-2 {
+    @include font(14px, 23px, 500);
+
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+  }
+
+  .contacts-list__item-schedule-list {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+  }
+
+  .contacts-list__item-schedule-day {
+    @include font(14px, 26px, 500);
+  }
+
+  .contacts-list__item-schedule-time {
+    @include font(14px, 26px, 500);
+
+    margin-bottom: 12px;
+  }
+
+  .contact-list__item-link {
+    @include font(14px, 26px, 500);
+  }
+
+  .products-list-btn {
+    flex-direction: row;
+  }
+
+  .products-list-btn__item {
+    margin-bottom: 0px;
+
+    &:not(:last-child) {
+      margin-right: 14.5px;
+    }
+  }
+
+  .products-list-btn__item-locations {
+    padding-left: 30px;
+
+    width: 191px;
+    height: 44px;
+  }
+
+  .products-list-btn__item-franchise {
+    padding-left: 37px;
+
+    width: 174px;
+    height: 44px;
+  }
+}
+
+@media screen and(min-width:1280px) {
+  .contacts {
+    padding-top: 120px;
+    padding-bottom: 121px;
+  }
+
+  .contacts-list__item-cafe {
+    width: 75px;
+  }
+
+  .contacts-list__item-description-1 {
+    @include font(16px, 30px, 500);
+
+    margin-bottom: 8px;
+  }
+
+  .contacts-list__item-description-2 {
+    @include font(16px, 29px, 500);
+  }
+
+  .contacts-list__item-schedule-day {
+    @include font(16px, 30px, 500);
+  }
+
+  .contacts-list__item-schedule-time {
+    @include font(16px, 30px, 500);
+  }
+
+  .contact-list__item-link {
+    @include font(16px, 29px, 500);
+  }
+
+  .products-list-btn__item:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  .products-list-btn__item-locations {
+    padding-left: 35px;
+
+    width: 198px;
+  }
+
+  .products-list-btn__item-franchise {
+    padding-left: 36px;
+
+    width: 168px;
+  }
+}
