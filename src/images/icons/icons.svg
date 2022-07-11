@@ -9,10 +9,7 @@
 <symbol id="icon-facebook" viewBox="0 0 33 32"><path fill="#fea5bb" style="fill:var(--color6, #fea5bb)" d="M16.47 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.836 0-16 7.163-16 16s7.164 16 16 16z"/><path fill="#fff" style="fill:var(--color1, #fff)" d="M20.916 15.981h-2.61V25.6h-3.955v-9.62h-1.88V12.6h1.88v-2.187c0-1.565.74-4.014 3.99-4.014l2.93.012v3.281h-2.126c-.348 0-.839.176-.839.922v1.99h2.956l-.346 3.376z"/></symbol>
 <symbol id="icon-close" viewBox="0 0 32 32"><path fill="none" stroke-width="2" d="m2.52 2 26.96 28M2 29.48 30 2.52"/></symbol>
 <symbol id="icon-arrow-right-mini" viewBox="0 0 26 32"><path stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" d="M3.542 3.2 20.368 16 3.542 28.8"/></symbol>
-<symbol id="icon-contacts-arrow" viewBox="0 0 26 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.173 3.2l14.169 12.8-14.169 12.8"></path>
-</symbol>
-<symbol id="icon-contacts-arrow-red" viewBox="0 0 22 32">
-<path fill="none" stroke="#d41443" style="stroke: var(--color2, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.545 3.2l13.7 12.8-13.7 12.8"></path>
+<symbol id="icon-arrow-right" viewBox="0 0 24 24">
+<path d="M10.586 6.586c-0.781 0.779-0.781 2.047 0 2.828l1.586 1.586h-7.244c-1.104 0-2 0.895-2 2s0.896 2 2 2h7.244l-1.586 1.586c-0.781 0.779-0.781 2.047 0 2.828 0.391 0.391 0.902 0.586 1.414 0.586s1.023-0.195 1.414-0.586l6.414-6.414-6.414-6.414c-0.781-0.781-2.047-0.781-2.828 0z"></path>
 </symbol>
 </defs></svg>
