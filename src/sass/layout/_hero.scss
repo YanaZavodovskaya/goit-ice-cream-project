@@ -1,0 +1,461 @@
+.hero__container {
+    display: block;
+    background-color: #ffb8ca;
+    position: relative;
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__titel {
+    width: 218px;
+    text-align: start;
+    font-family: var(--secondary-font-family);
+    font-style: normal;
+    @include font(26px, 30px, 400);
+
+    text-transform: uppercase;
+
+    color: var(--text-color-theme-dark);
+    margin-bottom: 20px;
+}
+
+.hero__titel-pink {
+    width: 218px;
+    display: block;
+    font-family: var(--secondary-font-family);
+    font-style: normal;
+    @include font(48px, 46px, 400);
+    text-transform: uppercase;
+    color: var(--primary-accent-color);
+
+}
+
+.hero__titel-wrapper {
+    padding-top: 193px;
+    display: block;
+    padding-bottom: 158px;
+
+}
+
+.hero__nav-list {
+    display: flex;
+}
+
+.hero__nav-link {
+    font-family: var(--primary-font-family);
+    @include font(8px, 10px, 400);
+    display: inline-block;
+    background-color: var(--primary-accent-color);
+    border-radius: 20px;
+    padding: 9px 15px;
+    color: var(--text-color-theme-dark);
+
+    transition: background-color 300ms var(--primary-cubic-bezier), color 300ms var(--primary-cubic-bezier);
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+        color: var(--primary-accent-color);
+    }
+
+
+}
+
+.hero__nav-item .second-link {
+    color: var(--primary-accent-color);
+    background-color: var(--text-color-theme-dark);
+
+    transition: background-color 300ms var(--primary-cubic-bezier);
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+    }
+
+}
+
+.hero__nav-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.hero__cafes-list {
+    display: none;
+}
+
+.hero__description-wrapper {
+    display: none;
+}
+
+.hero__images-list .hero__milk-img,
+.hero__images-list .hero__girl-img {
+    display: none;
+}
+
+
+
+.hero__ice-cream-img {
+    position: absolute;
+    bottom: 0;
+    left: 117px;
+    z-index: -1;
+    /*width: 171px;
+  height: 410px;*/
+
+}
+
+
+.picture::after {
+    content: "";
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background-color: var(--secondary-accent-color);
+    display: block;
+    position: absolute;
+    z-index: -2;
+    top: 83px;
+    left: 36px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .hero__cafes-list {
+        display: block;
+        padding-top: 94px;
+    }
+
+   
+
+    .hero__titel {
+        width: 162px;
+        @include font(22px, 25px, 400);
+
+    }
+
+    .hero__titel-pink {
+        @include font(34px, 31px, 400);
+
+
+    }
+
+
+    .hero__images-list {
+        display: flex;
+    }
+
+    .hero__images-list .hero__milk-img,
+    .hero__images-list .hero__girl-img {
+        display: block;
+    }
+
+    .hero__titel-wrapper {
+        padding-top: 102px;
+        padding-bottom: 0;
+        margin-bottom: 61px;
+    }
+
+    .hero__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero__cafes-item {
+        position: relative;
+        z-index: 2;
+
+    }
+
+    .hero__cafes-item:not(:last-child) {
+        margin-bottom: 17px;
+    }
+
+    .hero__cafes-description {
+
+        display: block;
+        font-family: var(--secondary-font-family);
+        @include font(28px, 32px, 400);
+        text-align: right;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        z-index: 2;
+        padding-right: 8px;
+        position: relative;
+
+
+
+
+
+        color: var(--primary-accent-color);
+    }
+
+    .hero__cafes-description::after {
+        content: "";
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: #FFFFFF;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        right: 0;
+    }
+
+    /*.hero__cafes-item .hero__cafes-description-second::after {
+top: -1;
+right: 2;
+}*/
+
+    .hero__cafes-type {
+        letter-spacing: 0;
+        display: block;
+        font-family: var(--primary-font-family);
+        @include font(8, 10, 400);
+        text-align: right;
+        text-transform: none;
+        color: var(--text-color-theme-dark);
+    }
+
+ 
+
+   .hero__description-wrapper {
+        display: block;
+        
+        padding-left: 152px;
+        padding-bottom: 56px;
+       word-wrap: break-word;
+    }
+
+    .hero__description-text {
+        display: block;
+            width: 114px;
+        font-family: var(--primary-font-family);
+        color: var(--text-color-theme-dark);
+        @include font(8px, 12px, 400);
+        margin-bottom: 7px;
+        font-style: normal;
+        letter-spacing: normal;
+    }
+
+    .hero__description-link {
+        display: block;
+        width: 18px;
+        height: 18px;
+        background-image: url(/src/images/hero/hero-arrow-tablet.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero__description-link {
+            background-image: url("/src/images/hero/hero-arrow-tablet@2x.png");
+        }
+    }
+
+    .hero__images {
+        padding: 0;
+        position: absolute;
+        /*padding-left: 32px;
+  padding-right: 32px;*/
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+
+    }
+
+    .hero__milk-img {
+        bottom: 16px;
+        padding-left: 32px;
+        /*width: 152px;
+        height: 154px;*/
+
+
+    }
+
+    .hero__ice-cream-img {
+        left: 322px;
+       /* width: 143px;
+        height: 336px;*/
+    }
+
+    .hero__girl-img {
+        bottom: 1px;
+        padding-right: 32px;
+        /*width: 190px;
+        height: 150px;*/
+        right: 0;
+        left: auto;
+    }
+
+
+
+    .picture::after {
+
+        width: 335px;
+        height: 333px;
+        top: 43px;
+        left: 248px;
+
+
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .hero__titel-wrapper {
+        padding-top: 147px;
+        margin-bottom: 108px;
+    }
+
+    .hero__titel {
+        width: 277px;
+        @include font(38px, 44px, 400);
+        margin-bottom: 24px
+    }
+
+    .hero__titel-pink {
+        @include font(58px, 52px, 400);
+
+
+    }
+
+
+
+
+    .hero__nav-link {
+        @include font(14px, 18px, 400);
+
+        padding: 11px 23px;
+        color: var(--text-color-theme-dark);
+
+
+
+    }
+
+    .hero__nav-item .second-link {
+        padding: 11px 15px;
+
+    }
+
+    .hero__nav-item:not(:last-child) {
+        margin-right: 12px;
+    }
+
+
+
+
+    .hero__description-text {
+           
+                width: 200px;
+        @include font(14px, 20px, 400);
+        margin-bottom: 20px;
+
+    }
+
+    .hero__description-wrapper {
+        
+        padding-left: 214px;
+        padding-bottom: 84px;
+
+    }
+
+    .hero__description-link {
+
+        width: 26px;
+        height: 26px;
+        background-image: url(/src/images/hero/hero-arrow-desktop.png);
+
+
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero__description-link {
+            background-image: url(/src/images/hero/hero-arrow-desktop@2x.png);
+        }
+    }
+
+    .hero__cafes-list {
+
+        padding-top: 156px;
+    }
+
+
+    .hero__cafes-item:not(:last-child) {
+        margin-bottom: 18px;
+    }
+
+    .hero__cafes-description {
+
+
+        @include font(46px, 53px, 400);
+
+
+        padding-right: 18px;
+
+
+
+
+
+    }
+
+
+
+    .hero__cafes-type {
+
+        @include font(14px, 18px, 400);
+
+    }
+
+    .hero__cafes-description::after {
+
+        width: 30px;
+        height: 30px;
+
+    }
+
+
+
+    .hero__milk-img {
+        padding-left: 16px;
+        bottom: 60px;
+       /* width: 213px;
+        height: 216px;*/
+
+
+    }
+
+    .hero__ice-cream-img {
+        left: 631px;
+        /*width: 236px;
+        height: 557px;*/
+
+    }
+
+    .hero__girl-img {
+        bottom: 0px;
+        padding-right: 16px;
+       /* width: 304px;
+        height: 241px;*/
+        right: 0;
+        left: auto;
+    }
+
+
+
+    .picture::after {
+        position: absolute;
+        width: 534px;
+        height: 534px;
+        top: 54px;
+        left: 519px;
+
+
+    }
+
+}
