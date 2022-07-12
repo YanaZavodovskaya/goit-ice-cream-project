@@ -3,6 +3,10 @@
     background-color: var(--accent-bg-color);
 }
 
+.footer__box {
+    margin-bottom: 40px;
+}
+
 .footer__signature-box {
     width: 232px;
 }
@@ -31,7 +35,6 @@
 
 .footer__contacts {
     display: flex;
-    margin-bottom: 40px;
 }
 
 .footer__social-list {
@@ -61,6 +64,8 @@
     @include font(12px, 22px, 700);
     color: var(--text-color-theme-light);
     text-align: end;
+    font-style: normal;
+    letter-spacing: 0.01em;
 }
 
 .footer__tel {
@@ -85,6 +90,8 @@
     color: var(--text-color-secondary);
 }
 
+//Tablet
+
 @media screen and (min-width: 768px) {
     .footer__box {
         display: flex;
@@ -101,10 +108,12 @@
     }
 
     .footer__signature-part {
+        margin-bottom: 0;
+
         @include font(48px, 55px, 400);
     }
 
-    .footer__social-link {
+    .footer__social-icon {
         width: 34px;
         height: 34px;
     }
@@ -123,6 +132,8 @@
         letter-spacing: 0.02em;
     }
 }
+
+//Desktop
 
 @media screen and (min-width: 1280px) {
     .footer {
