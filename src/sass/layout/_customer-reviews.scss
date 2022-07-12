@@ -52,7 +52,7 @@
     left: 10%;
     width: 80%;
     height: 70%;
-    background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, #FAFAFA 0, #FAFAFA 15%);
+    background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, transparent 0, transparent 31px);
     margin-right: auto;
     margin-left: auto;
       
@@ -90,13 +90,13 @@
 
   @media screen and (min-width: 480px) {
     .customer-reviews__reviews {
-        font-size: 14px;
+      @include font(16px, 30px);
         padding: 50px 80px 30px 80px;
         width: auto;
     }
   
     .customer-reviews__rows {
-       background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, #FAFAFA 0, #FAFAFA 20%);
+       background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, transparent 0, transparent 30px);
     }
   }
   
@@ -117,7 +117,7 @@
     }
     .customer-reviews__rows {
         height: 50%;
-        background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, #FAFAFA 0, #FAFAFA 45%);
+        background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, transparent 0, transparent 30px);
     }
   }
   
@@ -136,7 +136,7 @@
     }
   
     .customer-reviews__rows {
-        background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, #FAFAFA 0, #FAFAFA 65%);
+        background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, transparent 0, transparent 30px);
     }
   }
   
