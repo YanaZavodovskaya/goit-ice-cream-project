@@ -19,7 +19,8 @@
 }
 
 .row {
-    @extend %align;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -39,6 +40,26 @@
         display: block;
         margin-bottom: 1px;
     }
+}
+
+.gallery__picture-1 {
+    padding-top: 95%;
+}
+
+.gallery__picture-2-3 {
+    padding-top: 60%;
+}
+
+.gallery__picture-6-7 {
+    padding-top: 65%;
+}
+
+.gallery__picture-8-9 {
+    padding-top: 45%;
+}
+
+.gallery__picture-10 {
+    padding-top: 100%;
 }
 
 .gallery__img {
