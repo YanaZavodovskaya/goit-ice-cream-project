@@ -1,0 +1,116 @@
+.page-header {
+    position: absolute;
+    width: 100%;
+    padding-top: 8px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.page-header__logo {
+    display: block;
+    height: 50px;
+}
+
+.page-header__navigation {
+    display: flex;
+}
+
+.page-header__menu {
+    display: none;
+}
+
+.page-header__mobile-menu-btn {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .page-header {
+        padding-top: 32px;
+    }
+
+
+    .page-header__mobile-menu-btn {
+        display: flex;
+        justify-content: center;
+        @include font(16px, 21px, 700);
+        width: 160px;
+        height: 44px;
+
+        text-align: center;
+        color: var(--primary-accent-color);
+        background-color: #ffffff;
+        border-radius: 22px;
+        align-items: center;
+
+        margin-right: 0;
+
+        transition: background-color 300ms var(--primary-cubic-bezier);
+
+        &:hover,
+        &:focus {
+            background-color: #ECEBEB;
+        }
+    }
+
+    .page-header__mobile-menu__btn-svg {
+        width: 9px;
+        height: 9px;
+        justify-content: center;
+        margin-left: 12px;
+        stroke: #d41443;
+        stroke-width: 2px;
+        
+            fill: transparent;
+    }
+
+    .mobile-menu__burger-btn {
+        margin-left: auto;
+        margin-right: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        .mobile-menu__burger-btn {
+            display: none;
+        }
+
+        .page-header__menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .page-header {
+            padding-top: 37px;
+            padding-bottom: 37px;
+        }
+
+        .page-header__link {
+            @include font(16px, 21px, 700);
+            color: var(--text-color-theme-dark);
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            transition: color 300ms var(--primary-cubic-bezier);
+
+            &:hover {
+                color: var(--primary-accent-color);
+            }
+        }
+
+        .page-header__menu .page-header__link.page-header__current {
+            color: var(--primary-accent-color);
+        }
+
+        .page-header__item:not(:last-child) {
+            margin-right: 35px;
+        }
+    }
+}
