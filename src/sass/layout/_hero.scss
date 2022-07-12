@@ -245,6 +245,12 @@ right: 2;
         background-image: url(/src/images/hero/hero-arrow-tablet.png);
         background-size: cover;
         background-repeat: no-repeat;
+        transition: scale 250ms var(--primary-cubic-bezier);
+        
+            &:hover,
+            &:focus {
+                transform: scale(120%);
+            }
 
     }
 
