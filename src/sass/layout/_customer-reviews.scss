@@ -91,12 +91,21 @@
   @media screen and (min-width: 480px) {
     .customer-reviews__reviews {
         @include font(14px, 30px);
-        padding: 50px 70px 30px 70px;
+        padding: 50px 70px 25px 70px;
         width: auto;
     }
   
     .customer-reviews__rows {
        background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, transparent 0, transparent 30px);
+    }
+
+    .customer-reviews__name {
+      position: relative;
+  
+        &::before {
+          content: '. . .';
+          left: 31%;
+        }
     }
   }
   
@@ -108,11 +117,15 @@
     .customer-reviews__name {
       @include font(16px, 30px);
         margin-bottom: 32px;
+        &::before {
+          content: '. . .';
+          left: 33%;
+        }
     }
   
     .customer-reviews__reviews {
       @include font(14px, 30px);
-        padding: 40px 60px 45px 60px;
+        padding: 50px 60px 40px 60px;
         width: auto;
     }
     .customer-reviews__rows {
@@ -128,11 +141,15 @@
   
     .customer-reviews__name {
       @include font(20px, 37px);
+      &::before {
+        content: '. . .';
+        left: 35%;
+      }
     }
     
     .customer-reviews__reviews {
       @include font(16px, 30px);
-        padding: 45px 110px 40px 110px;
+        padding: 45px 115px 35px 115px;
     }
   
     .customer-reviews__rows {
