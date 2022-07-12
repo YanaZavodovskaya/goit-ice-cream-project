@@ -41,8 +41,17 @@
     }
 }
 
+.gallery__img {
+    max-width: 44px;
+    max-height: 44px;
+}
 
-@media screen and (min-width: 480px) {
+.gallery__img-4 {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+@media screen and (min-width: 768px) {
     .gallery__picture:not(:last-child) {
         margin-bottom: 3px;
     }
@@ -50,6 +59,16 @@
     .gallery__item:not(:last-child) {
         margin-right: 3px;
     }
+
+        .gallery__img {
+            min-width: 105px;
+            min-height: 105px;
+        }
+    
+        .gallery__img-4 {
+            min-width: 215px;
+            min-height: 215px;
+        }
 }
 
 
@@ -61,4 +80,14 @@
     .gallery__item:not(:last-child) {
         margin-right: 4px;
     }
+
+        .gallery__img {
+            min-width: 138px;
+            min-height: 138px;
+        }
+    
+        .gallery__img-4 {
+            min-width: 283px;
+            min-height: 283px;
+        }
 }
