@@ -1,0 +1,192 @@
+.customer-reviews-container {
+    padding-top: 60px;
+  }
+
+  .customer-reviews-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .customer-reviews__photo {
+    display: block;
+    width: 85px;
+    height: 85px;
+    border-radius: 44px;
+    background-color: #757575;
+    margin-bottom: 32px;
+  }
+  
+  //------------REVIEWS----------------------
+
+  .customer-reviews__reviews-container {
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFA;
+    margin-bottom: 16px;
+    transition: box-shadow 250ms linear;
+      &:hover,
+      &:focus {
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+  }
+
+  .customer-reviews__reviews {
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    z-index: 2;
+    padding: 50px 60px;
+  }
+
+  .customer-reviews__rows{
+    display: block;
+    position: absolute;
+    top: 74px;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+    background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, #FAFAFA 0, #FAFAFA 15%);
+    margin-right: auto;
+    margin-left: auto;
+      
+      &::before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: "\275E";
+        font-size: 100px;
+        line-height: 0;
+        color: #E1E1E1;
+      }
+  }
+
+  .customer-reviews__name {
+    position: relative;
+    font-family: var(--primary-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(26 / 14 * 100%);
+    text-align: center;
+    margin-bottom: 16px;
+    padding-top: 20px;
+  
+      &::before {
+        content: '. . .';
+        position: absolute;
+        top: 0;
+        left: 35%;
+        bottom: 10px;
+        font-size: 40px;
+        height: 5px;
+        line-height: 0;
+        color: #C7133E;
+      }
+  }
+
+  @media screen and (min-width: 480px) {
+    .customer-reviews__reviews {
+        font-size: 14px;
+        padding: 50px 80px 30px 80px;
+        width: auto;
+    }
+  
+    .customer-reviews__rows {
+       background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, #FAFAFA 0, #FAFAFA 20%);
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .customer-reviews__photo {
+     margin-bottom: 20px;
+    }
+  
+    .customer-reviews__name {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+  
+    .customer-reviews__reviews {
+        font-size: 14px;
+        padding: 50px 100px 30px 100px;
+        width: auto;
+    }
+    .customer-reviews__rows {
+        height: 50%;
+        background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, #FAFAFA 0, #FAFAFA 45%);
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .customer-reviews__photo {
+      margin-bottom: 16px;
+     }
+  
+    .customer-reviews__name {
+        font-size: 20px;
+    }
+    
+    .customer-reviews__reviews {
+        font-size: 16px;
+        padding: 40px 140px 40px 140px;
+    }
+  
+    .customer-reviews__rows {
+        background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, #FAFAFA 0, #FAFAFA 65%);
+    }
+  }
+  
+  // ---------SWIPER--------------------
+  .swiper {
+    width: 90%;
+  }
+  
+  .swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-pagination{
+    position: relative;
+    padding-bottom: 0;
+  }
+  
+  .swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child),
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
+    margin-right: 18px;
+  }
+  
+  .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-image: url(../images/customer/home.svg);
+    background-color: transparent;
+    background-size: cover;
+    border-radius: unset;
+    width: 12px;
+    height: 12px;
+    transition: 250ms linear;
+  }  
