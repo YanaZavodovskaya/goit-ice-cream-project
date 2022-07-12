@@ -39,9 +39,7 @@
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 255%;
+    @include font(12px, 31px);
     text-align: center;
     z-index: 2;
     padding: 50px 60px;
@@ -72,9 +70,7 @@
   .customer-reviews__name {
     position: relative;
     font-family: var(--primary-font-family);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: calc(26 / 14 * 100%);
+    @include font(14px, 26px);
     text-align: center;
     margin-bottom: 16px;
     padding-top: 20px;
@@ -110,12 +106,12 @@
     }
   
     .customer-reviews__name {
-        font-size: 16px;
+      @include font(16px, 30px);
         margin-bottom: 32px;
     }
   
     .customer-reviews__reviews {
-        font-size: 14px;
+      @include font(14px, 30px);
         padding: 50px 100px 30px 100px;
         width: auto;
     }
@@ -131,11 +127,11 @@
      }
   
     .customer-reviews__name {
-        font-size: 20px;
+      @include font(20px, 37px);
     }
     
     .customer-reviews__reviews {
-        font-size: 16px;
+      @include font(16px, 30px);
         padding: 40px 140px 40px 140px;
     }
   
