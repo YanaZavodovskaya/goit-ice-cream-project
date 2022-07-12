@@ -120,27 +120,29 @@
   }
 }
 
-.products-list-btn {
+.contacts-list-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.products-list-btn__item {
+.contacts-list-btn__item {
   margin-bottom: 10px;
 }
 
-.products-list-btn__item-locations {
+.contacts-list-btn__item-locations {
   background: #d41342;
   border-radius: 22px;
 
   font-family: var(--primary-font-family);
-  @include font(16px, 21px, 700);
+  // @include font(16px, 21px, 700);
+  font-size: 16px;
+  font-weight: 700;
 
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 
   color: #ffffff;
 
@@ -149,24 +151,30 @@
 
   width: 162px;
   height: 44px;
+
 }
 
-.products-list-btn__location-icon {
+.contacts-list-btn__location-icon {
   width: 8px;
-  height: 12px;
+  height: 10px;
   margin-left: 8px;
+  
+  align-items: center;
+  justify-content: center;
 }
 
-.products-list-btn__item-franchise {
+.contacts-list-btn__item-franchise {
   background: #ffffff;
   border-radius: 22px;
 
   font-family: var(--primary-font-family);
-  @include font(16px, 21px, 700);
+  // @include font(16px, 21px, 700);
+  font-size: 16px;
+  font-weight: 700;
 
-  display: flex;
+ display: inline-flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 
   color: #d41443;
 
@@ -184,10 +192,13 @@
   }
 }
 
-.products-list-btn__franchise-icon {
+.contacts-list-btn__franchise-icon {
   width: 8px;
-  height: 12px;
+  height: 10px;
   margin-left: 8px;
+
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and(min-width:768px) {
@@ -258,11 +269,11 @@
     @include font(14px, 26px, 500);
   }
 
-  .products-list-btn {
+  .contacts-list-btn {
     flex-direction: row;
   }
 
-  .products-list-btn__item {
+  .contacts-list-btn__item {
     margin-bottom: 0px;
 
     &:not(:last-child) {
@@ -270,14 +281,14 @@
     }
   }
 
-  .products-list-btn__item-locations {
+  .contacts-list-btn__item-locations {
     padding-left: 30px;
 
     width: 191px;
     height: 44px;
   }
 
-  .products-list-btn__item-franchise {
+  .contacts-list-btn__item-franchise {
     padding-left: 37px;
 
     width: 174px;
@@ -285,11 +296,11 @@
   }
 }
 
-.products-list-btn__location-icon {
+.contacts-list-btn__location-icon {
   stroke: #ffffff;
 }
 
-.products-list-btn__franchise-icon {
+.contacts-list-btn__franchise-icon {
   stroke: #d41443;
 }
 
@@ -325,17 +336,17 @@
     @include font(16px, 29px, 500);
   }
 
-  .products-list-btn__item:not(:last-child) {
+  .contacts-list-btn__item:not(:last-child) {
     margin-right: 12px;
   }
 
-  .products-list-btn__item-locations {
+  .contacts-list-btn__item-locations {
     padding-left: 35px;
 
     width: 198px;
   }
 
-  .products-list-btn__item-franchise {
+  .contacts-list-btn__item-franchise {
     padding-left: 36px;
 
     width: 168px;
