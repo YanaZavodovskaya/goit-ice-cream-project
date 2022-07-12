@@ -42,7 +42,7 @@
     @include font(12px, 31px);
     text-align: center;
     z-index: 2;
-    padding: 50px 60px 26px 60px;
+    padding: 45px 60px 26px 60px;
   }
 
   .customer-reviews__rows{
@@ -90,8 +90,8 @@
 
   @media screen and (min-width: 480px) {
     .customer-reviews__reviews {
-      @include font(16px, 30px);
-        padding: 50px 80px 30px 80px;
+        @include font(14px, 30px);
+        padding: 50px 70px 30px 70px;
         width: auto;
     }
   
@@ -112,7 +112,7 @@
   
     .customer-reviews__reviews {
       @include font(14px, 30px);
-        padding: 50px 100px 30px 100px;
+        padding: 40px 60px 45px 60px;
         width: auto;
     }
     .customer-reviews__rows {
@@ -132,7 +132,7 @@
     
     .customer-reviews__reviews {
       @include font(16px, 30px);
-        padding: 40px 140px 40px 140px;
+        padding: 45px 110px 40px 110px;
     }
   
     .customer-reviews__rows {
