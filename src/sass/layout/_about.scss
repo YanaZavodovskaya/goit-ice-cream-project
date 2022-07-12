@@ -19,17 +19,17 @@
 .about {
     padding-top: 60px;
     background-color: var(--accent-bg-color);
-    background-image: url(../images/about/mobile-bg-img.png);
+    background-image: url(../images/about/mobile-bg-img-half1.png), url(../images/about/mobile-bg-img-half2.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0 594px;
+    background-position: 0% 594px, 100% 594px;
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .about {
-        background-image: url(../images/about/mobile-bg-img@x2.png);
+        background-image: url(../images/about/mobile-bg-img-half1@x2.png), url(../images/about/mobile-bg-img-half2@x2.png);
     }
 }
 
@@ -101,13 +101,14 @@
     stroke-width: 2px;
     justify-content: center;
     margin-left: 12px;
+    // align-items: center;
 }
 
 // TABLET
 @media screen and(min-width:768px) {
     .about {
-        background-image: url(../images/about/tablet-bg-img.png);
-        background-position: 0px 201px;
+        background-image: url(../images/about/tablet-bg-img-half1.png), url(../images/about/tablet-bg-img-half2.png);
+        background-position: 0% 201px, 100% 201px;
     }
 
     .about .container {
@@ -121,7 +122,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .about {
-            background-image: url(../images/about/tablet-bg-img@x2.png);
+            background-image: url(../images/about/mobile-bg-img-half1@x2.png), url(../images/about/mobile-bg-img-half2@x2.png);;
         }
     }
 
@@ -141,6 +142,11 @@
     .about__picture {
         margin-bottom: 0;
         margin-right: 32px;
+    }
+
+    .about__img{
+        width: 336px;
+        height: 336px;
     }
 
     .about__list {
@@ -173,15 +179,15 @@
 // DESKTOP
 @media screen and(min-width:1280px) {
     .about {
-        background-image: url(../images/about/desktop-bg-img.png);
-        background-position: 0px 236px;
+        background-image: url(../images/about/desktop-bg-img-half1.png), url(../images/about/desktop-bg-img-half2.png);
+        background-position: 0% 236px, 100% 236px;
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .about {
-            background-image: url(../images/about/desktop-bg-img@x2.png);
+            background-image: url(../images/about/desktop-bg-img-half1@x2.png), url(../images/about/desktop-bg-img-half2@x2.png);
         }
     }
 
@@ -199,6 +205,11 @@
         padding-left: 16px;
         padding-bottom: 20px;
         margin-right: auto;
+    }
+
+    .about__img{
+        width: 501px;
+        height: 501px;
     }
 
     .about__list {
