@@ -4,6 +4,15 @@
   background: var(--accent-bg-color);
 }
 
+.advantages__title {
+  font-family: var(--secondary-font-family);
+  @include font(34px, 40px, 400);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-accent-color);
+  margin-bottom: 32px;
+}
+
 .advantages__item {
   width: 230px;
   &:not(:last-child) {
