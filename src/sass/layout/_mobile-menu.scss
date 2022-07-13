@@ -44,6 +44,9 @@ z-index: 300;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 12px;
+@include font(16px, 21px, 700);
+    color: var(--primary-accent-color);
+
 
     transition: background-color 300ms var(--primary-cubic-bezier);
 
@@ -54,19 +57,7 @@ z-index: 300;
 
 }
 
-.mobile-menu__btn--link {
-    text-decoration: none;
-    @include font(16px, 21px, 700);
-    color: var(--primary-accent-color);
-    transform: scale(1);
 
-    transition: transform 300ms var(--primary-cubic-bezier);
-
-    .mobile-menu__btn:hover & {
-        transform: scale(1.1);
-    }
-
-}
 
 .mobile-menu__btn--svg {
     width: 9px;
