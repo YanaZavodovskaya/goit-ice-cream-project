@@ -58,12 +58,12 @@
       
       &::before {
         position: absolute;
-        top: 0px;
+        top: -45px;
         left: 0px;
-        content: "\275E";
-        font-size: 100px;
-        line-height: 0;
-        color: #E1E1E1;
+        background-image: url(../images/customer-reviews/quotes.svg);
+        content: '';
+        width: 54px;
+        height: 40px;
       }
   }
 
