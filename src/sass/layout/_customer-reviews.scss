@@ -27,7 +27,7 @@
     align-items: center;
     background-color: #FAFAFA;
     margin-bottom: 16px;
-    transition: box-shadow 250ms linear;
+    transition: box-shadow 250ms var(--primary-cubic-bezier);
       &:hover,
       &:focus {
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -42,7 +42,7 @@
     @include font(12px, 31px);
     text-align: center;
     z-index: 2;
-    padding: 45px 60px 26px 60px;
+    padding: 45px 55px 26px 55px;
   }
 
   .customer-reviews__rows{
@@ -202,5 +202,5 @@
     border-radius: unset;
     width: 12px;
     height: 12px;
-    transition: 250ms linear;
+    transition: 250ms var(--primary-cubic-bezier);
   }  
