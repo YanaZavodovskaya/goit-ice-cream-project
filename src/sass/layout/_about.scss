@@ -102,25 +102,12 @@
 
 // TABLET
 @media screen and(min-width:768px) {
-    .about {
-        background-image: url(../images/about/tablet-bg-img-half1.png), url(../images/about/tablet-bg-img-half2.png);
-        background-position: 0% 201px, 100% 201px;
-        background-size: 384px, 384px;
-    }
 
     .about .container {
         display: block;
         justify-content: center;
         align-items: center;
         align-content: center;
-    }
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .about {
-            background-image: url(../images/about/tablet-bg-img-half1@x2.png), url(../images/about/tablet-bg-img-half2@x2.png);;
-        }
     }
 
     .about__subtitle {
@@ -192,9 +179,12 @@
         margin-bottom: 60px;
     }
 
-    .about__picture {
+    .about__wrapper{
         padding-left: 16px;
         padding-bottom: 20px;
+    }
+
+    .about__picture {
         margin-right: auto;
     }
 
@@ -208,10 +198,10 @@
         @include font(16px, 28px);
         max-width: 463px;
         margin-right: 121px;
+        padding-top: 90px;
     }
 
     .about-article-1 {
-        padding-top: 90px;
         margin-bottom: 32px;
         letter-spacing: 0.04em;
     }
