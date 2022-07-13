@@ -23,6 +23,7 @@ z-index: 300;
 }
 
 .mobile-menu__btn--open {
+    display: block;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -35,6 +36,7 @@ z-index: 300;
 }
 
 .mobile-menu__btn {
+    display: block;
     width: 209px;
     height: 44px;
     border-radius: 22px;
@@ -53,6 +55,7 @@ z-index: 300;
         &:hover,
             &:focus {
                 background-color: #ECEBEB;
+                animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
             }
 
 }
