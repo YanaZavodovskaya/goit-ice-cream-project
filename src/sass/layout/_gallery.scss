@@ -65,11 +65,27 @@
 .gallery__img {
     max-width: 44px;
     max-height: 44px;
+    transition: transform 500ms var(--primary-cubic-bezier);
+    
+        &:hover,
+        &:focus {
+            transform: perspective(500px) rotateY(20deg);
+    
+    
+        }
 }
 
 .gallery__img-4 {
     max-width: 88px;
     max-height: 88px;
+    transition: transform 500ms var(--primary-cubic-bezier);
+    
+        &:hover,
+        &:focus {
+            transform: perspective(500px) rotateY(10deg);
+    
+    
+        }
 }
 
 @media screen and (min-width: 768px) {
