@@ -89,6 +89,10 @@
   }
 
   @media screen and (min-width: 480px) {
+    .customer-reviews-container {
+      max-width: 480px
+    }
+
     .customer-reviews__reviews {
         @include font(14px, 30px);
         padding: 50px 70px 25px 70px;
@@ -110,6 +114,10 @@
   }
   
   @media screen and (min-width: 768px) {
+    .customer-reviews-container {
+      max-width: 768px
+    }
+
     .customer-reviews__photo {
      margin-bottom: 20px;
     }
@@ -150,6 +158,10 @@
     .customer-reviews__reviews {
       @include font(16px, 30px);
         padding: 45px 125px 28px 125px;
+    }
+
+    .customer-reviews-container {
+      max-width: 1480px;
     }
   
     .customer-reviews__rows {
