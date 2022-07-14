@@ -1,19 +1,31 @@
 .footer {
     padding-top: 40px;
     background-color: var(--accent-bg-color);
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: 60px;
+        width: 100%;
+        height: 1px;
+        border-radius: 1px;
+        background-color: #E1E1E1;
+    }
 }
 
 .footer__box {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 }
 
 .footer__signature-box {
     width: 232px;
+    margin-bottom: 40px;
 }
 
 .footer__signature {
-    margin-bottom: 16px;
-
     font-family: var(--secondary-font-family);
     @include font(18px, 21px, 400);
 
@@ -23,7 +35,8 @@
 }
 
 .footer__signature-part {
-    margin-bottom: 40px;
+    display: block;
+    margin-top: 16px;
 
     font-family: var(--secondary-font-family);
     @include font(34px, 39px, 400);
@@ -44,9 +57,19 @@
 }
 
 .footer__social-item {
+    width: 32px;
+    height: 32px;
+
     &:not(:last-child) {
         margin-right: 30px;
     }
+}
+
+.footer__social-link {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .footer__social-icon {
@@ -72,11 +95,6 @@
     color: var(--primary-accent-color);
 }
 
-.footer__copyright {
-    border-top: 1px solid #E1E1E1;
-    padding-top: 16px;
-}
-
 .footer__copyright-container {
     display: flex;
     justify-content: center;
@@ -93,6 +111,10 @@
 //Tablet
 
 @media screen and (min-width: 768px) {
+    .footer::after {
+        bottom: 40px;
+    }
+
     .footer__box {
         display: flex;
         justify-content: space-between;
@@ -101,6 +123,7 @@
 
     .footer__signature-box {
         width: 340px;
+        margin-bottom: 0;
     }
 
     .footer__signature {
@@ -108,9 +131,12 @@
     }
 
     .footer__signature-part {
-        margin-bottom: 0;
-
         @include font(48px, 55px, 400);
+    }
+
+    .footer__social-item {
+        width: 34px;
+        height: 34px;
     }
 
     .footer__social-icon {
@@ -130,18 +156,15 @@
         width: 278px;
         @include font(14px, 26px, 700);
         letter-spacing: 0.02em;
+        margin-bottom: 6px;
     }
 }
 
 //Desktop
 
 @media screen and (min-width: 1280px) {
-    .footer {
-        padding-top: 120px;
-    }
-
     .footer__box {
-        margin-bottom: 60px;
+        margin-bottom: 67px;
     }
 
     .footer__signature-box {
@@ -162,5 +185,9 @@
 
     .footer__copyright {
         padding-top: 7px;
+    }
+
+    .footer__copyright-text {
+        margin-bottom: 4px;
     }
 }
