@@ -44,48 +44,61 @@
 
 .gallery__picture-1 {
     padding-top: 95%;
+    animation: pulse-2 1200ms linear 200ms infinite alternate;
 }
 
-.gallery__picture-2-3 {
+.gallery__picture-2 {
     padding-top: 60%;
+
 }
 
-.gallery__picture-6-7 {
+.gallery__picture-6 {
     padding-top: 65%;
+
 }
 
-.gallery__picture-8-9 {
+.gallery__picture-8 {
     padding-top: 45%;
+    animation: pulse-2 1400ms linear 300ms infinite alternate;
 }
 
 .gallery__picture-10 {
     padding-top: 100%;
+
 }
+
+.gallery__picture-5 {
+    animation: pulse-2 1000ms linear 400ms infinite alternate;
+}
+
+.gallery__picture-7 {
+    animation: pulse-2 1400ms linear 300ms infinite alternate;
+}
+
+
 
 .gallery__img {
     max-width: 44px;
     max-height: 44px;
     transition: transform 500ms var(--primary-cubic-bezier);
-    
-        &:hover,
-        &:focus {
-            transform: perspective(500px) rotateY(20deg);
-    
-    
-        }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.03);
+
+    }
 }
 
 .gallery__img-4 {
     max-width: 88px;
     max-height: 88px;
     transition: transform 500ms var(--primary-cubic-bezier);
-    
-        &:hover,
-        &:focus {
-            transform: perspective(500px) rotateY(10deg);
-    
-    
-        }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.03);
+
+    }
 }
 
 @media screen and (min-width: 768px) {

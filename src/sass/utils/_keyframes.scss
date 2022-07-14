@@ -48,3 +48,13 @@
         transform: translateX(-8px);
     }
 }
+
+@keyframes pulse-2 {
+    0% {
+        transform: scale(100%);
+    }
+
+    100% {
+        transform: scale(105%);
+    }
+}
